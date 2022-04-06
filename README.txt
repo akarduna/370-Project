@@ -1,5 +1,5 @@
 370 project!
 Garrett - React app frontend
 Alex -
-Austin -
+Austin - Hardware/Heartrate sensor
 Ayden -
