@@ -2,4 +2,4 @@
 Garrett - React app frontend
 Alex -
 Austin -
-Ayden -
+Ayden - JSON Game data parsing in python
