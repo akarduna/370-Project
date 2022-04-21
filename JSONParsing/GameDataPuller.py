@@ -111,10 +111,15 @@ for i in range(len(frames)):
             except Exception:
                 #do nothing
                 pass
-file.write("names:")
+file.write("blueteam:")
 for i in range(len(summonerName)):
     print(summonerName[i] + " is playing " + champNames[i])
+    if(i == 5):
+        file.write("redteam:")
     file.write(summonerName[i] + "-" + champNames[i] + ",")
+playerIndex = summonerName.index(summonerNameResponse["name"])
+file.write("focus:" + summonerNameResponse["name"] + "-" + champNames[playerIndex] + ",")
+
 
 print("Finding all objective and champion kills.")
 #determine all the monster and champion deaths
@@ -125,19 +130,29 @@ for i in range(len(frames)):
             if currentObject["monsterType"] == "RIFTHERALD":
                 #print("Rift Herald found:", (int(currentObject["timestamp"])/timeInterval))
                 currTime = (int(currentObject["timestamp"])/timeInterval)
-                file.write("obj-riftherald/{currTime:.3f},".format(currTime = currTime))
+                if currentObject["killerTeamId"] == 100:
+                    file.write("obj-riftherald-blue-{currTime:.3f},".format(currTime = currTime))
+                else:
+                    file.write("obj-riftherald-red-{currTime:.3f},".format(currTime = currTime))
             if currentObject["monsterType"] == "DRAGON":
                 #print("Dragon found:", currentObject["monsterSubType"], (int(currentObject["timestamp"])/timeInterval))
                 currTime = (int(currentObject["timestamp"])/timeInterval)
-                file.write("obj-dragon." + currentObject["monsterSubType"] + "/{currTime:.3f},".format(currTime = currTime))
+                if currentObject["killerTeamId"] == 100:
+                    file.write("obj-dragon-" + currentObject["monsterSubType"] + "-blue-{currTime:.3f},".format(currTime = currTime))
+                else:
+                    file.write("obj-dragon-" + currentObject["monsterSubType"] + "-red-{currTime:.3f},".format(currTime = currTime))
             if currentObject["monsterType"] == "BARON_NASHOR":
                 currTime = (int(currentObject["timestamp"])/timeInterval)
-                file.write("obj-baron/{currTime:.3f},".format(currTime = currTime))
+                if currentObject["killerTeamId"] == 100:
+                    file.write("obj-baron-blue-{currTime:.3f},".format(currTime = currTime))
+                else:
+                    file.write("obj-baron-red-{currTime:.3f},".format(currTime = currTime))
                 #print("Baron found:", (int(currentObject["timestamp"])/timeInterval))
         if currentObject["type"] == "CHAMPION_KILL":
            #print(champNames[currentObject["killerId"] - 1],"killed",champNames[currentObject["victimId"] - 1] + " at time", currentObject["timestamp"] / timeInterval)
             currTime = (int(currentObject["timestamp"])/timeInterval)
-            file.write("kill-" + champNames[currentObject["killerId"] - 1] + "." + champNames[currentObject["victimId"] - 1] + "/{currTime:.3f},".format(currTime = currTime))
+            killGold = currentObject["bounty"]
+            file.write("kill-" + champNames[currentObject["killerId"] - 1] + "-" + champNames[currentObject["victimId"] - 1] + "-{killGold}-{currTime:.3f},".format(killGold = killGold, currTime = currTime))
 print("Finished. Wrote to file \"gamedata.txt\"")
 file.close
             
