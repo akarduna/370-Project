@@ -73,11 +73,11 @@ summonerName = [""] * 10
 champNames = [""] * 10
 
 #open and begin writing to a file
-file = open("gamedata.txt", "w")
+file = open("gamedata.csv", "w")
 
 #get 'real time stamp' from json. Currently unable to convert this to a useful time stamp.
 realTimeStamp = jsonObj["info"]["frames"][0]["events"][0]["realTimestamp"]
-file.write("timestamp:{realTimeStamp},".format(realTimeStamp = realTimeStamp))
+file.write("timestamp,{realTimeStamp},null,null\n".format(realTimeStamp = realTimeStamp))
 
 print("Finding all summoner names in the game.")
 #parse through json object metadata to get summoner puuid's from the game
@@ -111,14 +111,17 @@ for i in range(len(frames)):
             except Exception:
                 #do nothing
                 pass
-file.write("blueteam:")
 for i in range(len(summonerName)):
+    if i < 5:
+        file.write("bluename,")
+    else:  
+        file.write("redname,")
     print(summonerName[i] + " is playing " + champNames[i])
     if(i == 5):
         file.write("redteam:")
-    file.write(summonerName[i] + "-" + champNames[i] + ",")
+    file.write(summonerName[i] + "," + champNames[i] + ",null,null\n")
 playerIndex = summonerName.index(summonerNameResponse["name"])
-file.write("focus:" + summonerNameResponse["name"] + "-" + champNames[playerIndex] + ",")
+file.write("focus," + summonerNameResponse["name"] + "," + champNames[playerIndex] + ",null,null\n")
 
 
 print("Finding all objective and champion kills.")
@@ -131,29 +134,48 @@ for i in range(len(frames)):
                 #print("Rift Herald found:", (int(currentObject["timestamp"])/timeInterval))
                 currTime = (int(currentObject["timestamp"])/timeInterval)
                 if currentObject["killerTeamId"] == 100:
-                    file.write("obj-riftherald-blue-{currTime:.3f},".format(currTime = currTime))
+                    file.write("obj,riftherald,blue,{currTime:.3f},null\n".format(currTime = currTime))
                 else:
-                    file.write("obj-riftherald-red-{currTime:.3f},".format(currTime = currTime))
+                    file.write("obj,riftherald-red,{currTime:.3f},null\n".format(currTime = currTime))
             if currentObject["monsterType"] == "DRAGON":
                 #print("Dragon found:", currentObject["monsterSubType"], (int(currentObject["timestamp"])/timeInterval))
                 currTime = (int(currentObject["timestamp"])/timeInterval)
                 if currentObject["killerTeamId"] == 100:
-                    file.write("obj-dragon-" + currentObject["monsterSubType"] + "-blue-{currTime:.3f},".format(currTime = currTime))
+                    if 'HEX' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,hextech,blue,{currTime:.3f}\n".format(currTime = currTime))
+                    if 'MOU' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,mountain,blue,{currTime:.3f}\n".format(currTime = currTime))
+                    if 'WATER' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,ocean,blue,{currTime:.3f}\n".format(currTime = currTime))
+                    if 'FIRE' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,infernal,blue,{currTime:.3f}\n".format(currTime = currTime))
+                    if 'AIR' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,cloud,blue,{currTime:.3f}\n".format(currTime = currTime))   
                 else:
-                    file.write("obj-dragon-" + currentObject["monsterSubType"] + "-red-{currTime:.3f},".format(currTime = currTime))
+                    if 'HEX' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,hextech,red,,{currTime:.3f}\n".format(currTime = currTime))
+                    if 'MOU' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,mountain,red,,{currTime:.3f}\n".format(currTime = currTime))
+                    if 'WATER' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,ocean,red,,{currTime:.3f}\n".format(currTime = currTime))
+                    if 'FIRE' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,infernal,red,,{currTime:.3f}\n".format(currTime = currTime))
+                    if 'AIR' in currentObject["monsterSubType"]:
+                        file.write("obj,dragon,cloud,red,{currTime:.3f}\n".format(currTime = currTime)) 
+                    
             if currentObject["monsterType"] == "BARON_NASHOR":
                 currTime = (int(currentObject["timestamp"])/timeInterval)
                 if currentObject["killerTeamId"] == 100:
-                    file.write("obj-baron-blue-{currTime:.3f},".format(currTime = currTime))
+                    file.write("obj,baron,blue,{currTime:.3f},null\n".format(currTime = currTime))
                 else:
-                    file.write("obj-baron-red-{currTime:.3f},".format(currTime = currTime))
+                    file.write("obj,baron,red,{currTime:.3f},null\n".format(currTime = currTime))
                 #print("Baron found:", (int(currentObject["timestamp"])/timeInterval))
         if currentObject["type"] == "CHAMPION_KILL":
            #print(champNames[currentObject["killerId"] - 1],"killed",champNames[currentObject["victimId"] - 1] + " at time", currentObject["timestamp"] / timeInterval)
             currTime = (int(currentObject["timestamp"])/timeInterval)
             killGold = currentObject["bounty"]
-            file.write("kill-" + champNames[currentObject["killerId"] - 1] + "-" + champNames[currentObject["victimId"] - 1] + "-{killGold}-{currTime:.3f},".format(killGold = killGold, currTime = currTime))
-print("Finished. Wrote to file \"gamedata.txt\"")
+            file.write("kill," + champNames[currentObject["killerId"] - 1] + "," + champNames[currentObject["victimId"] - 1] + ",{killGold},{currTime:.3f}\n".format(killGold = killGold, currTime = currTime))
+print("Finished. Wrote to file \"gamedata.csv\"")
 file.close
             
             
