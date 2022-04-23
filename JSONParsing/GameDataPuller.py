@@ -74,7 +74,7 @@ champNames = [""] * 10
 
 #open and begin writing to a file
 file = open("gamedata.csv", "w")
-
+file.write("event,p1,p2,gold,timestamp\n")
 #get 'real time stamp' from json. Currently unable to convert this to a useful time stamp.
 realTimeStamp = jsonObj["info"]["frames"][0]["events"][0]["realTimestamp"]
 file.write("timestamp,{realTimeStamp},null,null\n".format(realTimeStamp = realTimeStamp))
