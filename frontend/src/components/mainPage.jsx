@@ -3,8 +3,9 @@ import { Button, TextField, Typography } from "@mui/material";
 import Timeline from "@mui/lab/Timeline";
 import TimelineDragon from "./timelineDragon";
 import TimelineTakedown from "./timelineTakedown";
-import file from "../exampledata/gamedata.csv";
-import { parseJSON } from "../functions/parseJSON";
+import TimelineTakendown from "./timelineTakendown";
+import TimelineStart from "./timelineStart";
+import TimelineEnd from "./timelineEnd";
 
 export default function MainPage() {
 	const [val, setVal] = useState("");
@@ -27,9 +28,11 @@ export default function MainPage() {
 			/>
 			<Button onClick={handleSubmit}>Submit</Button>
 			<Timeline position="left">
+				<TimelineStart />
 				<TimelineDragon heartrate={20} type={"Ocean"} time={"10 secs"} />
 				<TimelineTakedown heartrate={56} enemy={"Jhin"} time={"10 secs"} />
-				<TimelineDragon heartrate={90} />
+				<TimelineTakendown heartrate={56} enemy={"Pyke"} time={"12 secs"} />
+				<TimelineEnd />
 			</Timeline>
 		</Fragment>
 	);
