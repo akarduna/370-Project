@@ -5,7 +5,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import { Avatar, Typography } from "@mui/material";
-import DragonIcon from "../images/dragonIcon.jpg";
+import DragonIcon from "../images/dragonIcon.png";
 
 export default function TimelineDragon({ heartrate, type, time }) {
 	return (
