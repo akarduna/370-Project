@@ -5,7 +5,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import { Avatar, Typography } from "@mui/material";
-import TakedownIcon from "../images/takedownTempIcon.jpg";
+import TakedownIcon from "../images/takedownIcon.png";
 
 export default function TimelineTakedown({ heartrate, enemy, time }) {
 	return (
