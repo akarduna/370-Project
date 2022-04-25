@@ -7,6 +7,7 @@ import TimelineTakendown from "./timelineTakendown";
 import TimelineStart from "./timelineStart";
 import TimelineEnd from "./timelineEnd";
 import { Box } from "@mui/system";
+import TimelineBaron from "./timelineBaron";
 
 export default function MainPage() {
 	const [val, setVal] = useState("");
@@ -71,6 +72,7 @@ export default function MainPage() {
 						<TimelineDragon heartrate={20} type={"Ocean"} time={"10 secs"} />
 						<TimelineTakedown heartrate={56} enemy={"Jhin"} time={"10 secs"} />
 						<TimelineTakendown heartrate={56} enemy={"Pyke"} time={"12 secs"} />
+						<TimelineBaron heartrate={95} time={"25 secs"} />
 						<TimelineEnd />
 					</Timeline>
 				</>
