@@ -15,7 +15,7 @@ export default function TimelineStart() {
 				variant="body2"
 				color="text.secondary"
 			>
-				<Typography variant="body2">0 secs</Typography>
+				<Typography variant="body2">START</Typography>
 			</TimelineOppositeContent>
 			<TimelineSeparator>
 				<TimelineConnector />

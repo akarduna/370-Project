@@ -15,7 +15,7 @@ export default function TimelineEnd() {
 				variant="body2"
 				color="text.secondary"
 			>
-				<Typography variant="body2">0 secs</Typography>
+				<Typography variant="body2">END</Typography>
 			</TimelineOppositeContent>
 			<TimelineSeparator>
 				<TimelineConnector />
