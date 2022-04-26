@@ -9,6 +9,7 @@ import TimelineEnd from "./timelineEnd";
 import TimelineStart from "./timelineStart";
 import TimelineTakedown from "./timelineTakedown";
 import TimelineTakendown from "./timelineTakendown";
+import $ from "jquery";
 
 export default function MainPage() {
 	const [val, setVal] = useState("");
@@ -27,6 +28,23 @@ export default function MainPage() {
 	};
 
 	const handleSubmit = () => {
+		const url = 'http://127.0.01:5000/RIOT_DATA';
+		$.ajax(
+			url,
+			{
+				type: `POST`,
+				contentType: "application/json",
+				data : JSON.stringify({
+					"summoner_name": "plez",
+					"game_number": 0
+				  }),
+				success: function (data, status, xhr) {
+					$('p').append('status: ' + status + ', data: ' + data);
+				},
+				error: function (jqXhr, textStatus, errorMessage) {
+						$('p').append('Error' + errorMessage);
+			}
+			});
 		if (!val) {
 			setHelpMsg(true);
 		} else {
