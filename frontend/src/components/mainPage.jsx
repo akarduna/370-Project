@@ -1,6 +1,7 @@
 import { Button, Stack, TextField, Typography } from "@mui/material";
 import { Fragment, useState } from "react";
 
+import $ from "jquery";
 import { Box } from "@mui/system";
 import Timeline from "@mui/lab/Timeline";
 import TimelineBaron from "./timelineBaron";
@@ -9,7 +10,6 @@ import TimelineEnd from "./timelineEnd";
 import TimelineStart from "./timelineStart";
 import TimelineTakedown from "./timelineTakedown";
 import TimelineTakendown from "./timelineTakendown";
-import $ from "jquery";
 
 export default function MainPage() {
 	const [val, setVal] = useState("");
@@ -19,6 +19,7 @@ export default function MainPage() {
 	const [helpMsg, setHelpMsg] = useState(false);
 	const [timelineVisible, setTimelineVisible] = useState(false);
 	const [time, setTime] = useState();
+	const [loading, setLoading] = useState(false);
 	const handleTypeChange = (event) => {
 		setVal(event.target.value);
 	};
@@ -32,7 +33,13 @@ export default function MainPage() {
 		const events = data["events"];
 		const timeLine = events.map(function(event) {
 			if(event[0] == "obj" && event[1] == "dragon"){
-				return <TimelineDragon heartrate={20} type={event[2]} time={event[3]}/>
+				return <TimelineDragon heartrate={-1} type={event[2]} time={event[4]}/>
+			}
+			if(event[0] == "obj" && event[1] == "baron"){
+				return <TimelineBaron heartrate={-1} time={event[3]}/>
+			}
+			if(event[0] == "kill" && event[1] == focus){
+				return <TimelineTakedown heartrate={-1} enemy={2} time={event[4]}/>
 			}
 		});
 		console.log(timeLine)
@@ -43,6 +50,7 @@ export default function MainPage() {
 		if (!val) {
 			setHelpMsg(true);
 		} else {
+			setLoading(true);
 			setVal2(val);
 			setGamesBack2(gamesBack)
 			console.log("Submitted: " + val + " and " + gamesBack);
@@ -69,6 +77,7 @@ export default function MainPage() {
 			setGamesBack("")
 			setTimelineVisible(true);
 			setHelpMsg(false);
+			setLoading(false);
 		}
 	};
 
@@ -111,10 +120,10 @@ export default function MainPage() {
 					</Stack>
 				)}
 			</Box>
-			{timelineVisible ? (
+			{timelineVisible && !loading ? (
 				<>
 					<Typography variant="h5">
-						Displaying information for summoner: <strong>{val2}</strong> at <strong>{gamesBack2}</strong> games back	
+						Displaying information for summoner: <strong>{val2}</strong> from <strong>{gamesBack2}</strong> games back	
 					</Typography>
 					<Timeline position="left">
 						<TimelineStart />
@@ -123,6 +132,7 @@ export default function MainPage() {
 					</Timeline>
 				</>
 			) : null}
+			{loading ? <Typography>Loading...</Typography> : null}
 		</Fragment>
 	);
 }
