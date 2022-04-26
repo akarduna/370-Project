@@ -137,7 +137,7 @@ def run(gameNumber, summonerName):
                     if currentObject["killerTeamId"] == 100:
                         file.write("obj,riftherald,blue,{currTime:.3f},null\n".format(currTime = currTime))
                     else:
-                        file.write("obj,riftherald-red,{currTime:.3f},null\n".format(currTime = currTime))
+                        file.write("obj,riftherald,red,{currTime:.3f},null\n".format(currTime = currTime))
                 if currentObject["monsterType"] == "DRAGON":
                     #print("Dragon found:", currentObject["monsterSubType"], (int(currentObject["timestamp"])/timeInterval))
                     currTime = (int(currentObject["timestamp"])/timeInterval)
@@ -154,13 +154,13 @@ def run(gameNumber, summonerName):
                             file.write("obj,dragon,cloud,blue,{currTime:.3f}\n".format(currTime = currTime))   
                     else:
                         if 'HEX' in currentObject["monsterSubType"]:
-                            file.write("obj,dragon,hextech,red,,{currTime:.3f}\n".format(currTime = currTime))
+                            file.write("obj,dragon,hextech,red,{currTime:.3f}\n".format(currTime = currTime))
                         if 'MOU' in currentObject["monsterSubType"]:
-                            file.write("obj,dragon,mountain,red,,{currTime:.3f}\n".format(currTime = currTime))
+                            file.write("obj,dragon,mountain,red,{currTime:.3f}\n".format(currTime = currTime))
                         if 'WATER' in currentObject["monsterSubType"]:
-                            file.write("obj,dragon,ocean,red,,{currTime:.3f}\n".format(currTime = currTime))
+                            file.write("obj,dragon,ocean,red,{currTime:.3f}\n".format(currTime = currTime))
                         if 'FIRE' in currentObject["monsterSubType"]:
-                            file.write("obj,dragon,infernal,red,,{currTime:.3f}\n".format(currTime = currTime))
+                            file.write("obj,dragon,infernal,red,{currTime:.3f}\n".format(currTime = currTime))
                         if 'AIR' in currentObject["monsterSubType"]:
                             file.write("obj,dragon,cloud,red,{currTime:.3f}\n".format(currTime = currTime)) 
                         
