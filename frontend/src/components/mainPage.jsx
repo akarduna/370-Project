@@ -9,10 +9,6 @@ import TimelineEnd from "./timelineEnd";
 import TimelineStart from "./timelineStart";
 import TimelineTakedown from "./timelineTakedown";
 import TimelineTakendown from "./timelineTakendown";
-import TimelineStart from "./timelineStart";
-import TimelineEnd from "./timelineEnd";
-import { Box } from "@mui/system";
-import TimelineBaron from "./timelineBaron";
 import $ from "jquery";
 
 export default function MainPage() {
