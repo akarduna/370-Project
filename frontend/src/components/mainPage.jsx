@@ -27,7 +27,7 @@ export default function MainPage() {
 	};
 
 	const handleSubmit = () => {
-		if (!val) {
+		if (!val || !gamesBack) {
 			setHelpMsg(true);
 		} else {
 			setVal2(val);
