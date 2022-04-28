@@ -1,6 +1,5 @@
 import csv
 import json
-from unicodedata import name
 import locale
 from locale import atof
  
@@ -29,8 +28,9 @@ def make_json(csvFilePath, jsonFilePath, heartRatePath):
             elif rows['event'] != 'timestamp':
                 row = list(rows.values())
                 if row[4] != "null":
-                    print(int(atof(row[4])))
-                    row.append(hr[int(atof(row[4]))][0])
+                    time_float = atof(row[4])*60
+                    print(time_float, row[4])
+                    row.append(hr[int(time_float)][0])
                 events.append(row)
     data['events'] = events
     data['names'] = names
@@ -47,3 +47,5 @@ def run():
     heartRatePath = r'Heartrate.csv'
     # Call the make_json function
     make_json(csvFilePath, jsonFilePath, heartRatePath)
+
+run()
