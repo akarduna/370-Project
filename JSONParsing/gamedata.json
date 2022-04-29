@@ -1,480 +1,634 @@
 {
     "player": [
         "focus",
-        "plez",
-        "Rakan",
+        "wheat thins",
+        "Aphelios",
         "null",
         "null"
     ],
     "events": [
         [
             "kill",
-            "Khazix",
-            "Zed",
+            "Qiyana",
+            "Graves",
             "400",
-            "2.998"
+            "3.930"
         ],
         [
             "kill",
-            "Camille",
-            "Tryndamere",
+            "Renata",
+            "Qiyana",
             "300",
-            "3.231"
+            "4.061"
         ],
         [
             "kill",
-            "Khazix",
-            "Camille",
+            "Lucian",
+            "Vex",
             "300",
-            "3.478"
+            "4.129"
         ],
         [
             "kill",
-            "Khazix",
-            "Zed",
+            "Vex",
+            "Morgana",
+            "300",
+            "4.136"
+        ],
+        [
+            "kill",
+            "Kayn",
+            "Renata",
+            "300",
+            "4.162"
+        ],
+        [
+            "kill",
+            "Kayn",
+            "Yasuo",
+            "300",
+            "4.547"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Kayn",
+            "300",
+            "4.746"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Graves",
+            "300",
+            "5.298"
+        ],
+        [
+            "kill",
+            "Yasuo",
+            "Zoe",
+            "300",
+            "5.422"
+        ],
+        [
+            "kill",
+            "Yasuo",
+            "Kayn",
+            "300",
+            "5.687"
+        ],
+        [
+            "kill",
+            "Yasuo",
+            "Vex",
+            "300",
+            "5.771"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Morgana",
+            "300",
+            "7.098"
+        ],
+        [
+            "kill",
+            "Lucian",
+            "Vex",
+            "300",
+            "7.104"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Lucian",
+            "300",
+            "7.167"
+        ],
+        [
+            "kill",
+            "Qiyana",
+            "Renata",
+            "300",
+            "7.419"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Kayn",
+            "300",
+            "7.641"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Vex",
+            "300",
+            "8.178"
+        ],
+        [
+            "kill",
+            "Lucian",
+            "Kayn",
             "274",
-            "4.553"
+            "8.648"
         ],
         [
             "kill",
-            "Rakan",
-            "Kaisa",
-            "300",
-            "5.311"
+            "Yasuo",
+            "Zoe",
+            "274",
+            "9.506"
         ],
         [
             "kill",
-            "Sylas",
-            "Nami",
-            "300",
-            "5.352"
+            "Qiyana",
+            "Renata",
+            "274",
+            "9.600"
         ],
         [
             "kill",
-            "Khazix",
-            "Sylas",
+            "Graves",
+            "Qiyana",
             "300",
-            "5.720"
+            "9.691"
         ],
         [
             "kill",
-            "Leblanc",
-            "Vladimir",
+            "Vex",
+            "Morgana",
             "300",
-            "5.776"
+            "10.111"
         ],
         [
             "kill",
-            "Leblanc",
-            "Khazix",
+            "Vex",
+            "Lucian",
             "300",
-            "5.998"
-        ],
-        [
-            "kill",
-            "Camille",
-            "Tryndamere",
-            "300",
-            "6.554"
-        ],
-        [
-            "kill",
-            "Kaisa",
-            "Leblanc",
-            "300",
-            "7.148"
-        ],
-        [
-            "kill",
-            "Tryndamere",
-            "Camille",
-            "300",
-            "7.872"
-        ],
-        [
-            "kill",
-            "Kaisa",
-            "Rakan",
-            "300",
-            "9.732"
-        ],
-        [
-            "kill",
-            "Khazix",
-            "Sylas",
-            "300",
-            "9.751"
-        ],
-        [
-            "kill",
-            "Nami",
-            "Zed",
-            "300",
-            "9.806"
+            "10.472"
         ],
         [
             "obj",
             "riftherald",
-            "blue",
-            "10.454",
+            "red",
+            "10.571",
             "null"
         ],
         [
             "kill",
-            "Leblanc",
-            "Kaisa",
-            "300",
-            "10.962"
+            "Yasuo",
+            "Zoe",
+            "219",
+            "10.814"
         ],
         [
             "kill",
-            "Zed",
-            "Nami",
+            "Graves",
+            "Aphelios",
             "300",
-            "11.045"
+            "10.899"
         ],
         [
             "kill",
-            "Nami",
-            "Zed",
+            "Renata",
+            "Qiyana",
             "300",
-            "11.062"
+            "11.234"
         ],
         [
             "kill",
-            "Khazix",
-            "Leblanc",
+            "Kayn",
+            "Yasuo",
             "300",
-            "11.270"
-        ],
-        [
-            "kill",
-            "Khazix",
-            "Rakan",
-            "300",
-            "11.344"
-        ],
-        [
-            "kill",
-            "Khazix",
-            "Sylas",
-            "274",
-            "11.623"
-        ],
-        [
-            "kill",
-            "Tryndamere",
-            "Camille",
-            "300",
-            "12.458"
-        ],
-        [
-            "kill",
-            "Kaisa",
-            "Leblanc",
-            "300",
-            "12.478"
-        ],
-        [
-            "kill",
-            "Zed",
-            "Tryndamere",
-            "300",
-            "12.536"
+            "11.297"
         ],
         [
             "obj",
             "dragon",
             "ocean",
             "blue",
-            "13.697"
+            "11.648"
         ],
         [
             "kill",
-            "Khazix",
-            "Leblanc",
+            "Graves",
+            "Zoe",
+            "175",
+            "11.954"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Morgana",
             "274",
-            "14.301"
+            "12.514"
         ],
         [
             "kill",
-            "Kaisa",
-            "Zed",
+            "Aphelios",
+            "Lucian",
             "300",
-            "14.349"
+            "12.568"
         ],
         [
             "kill",
-            "Vladimir",
-            "Sylas",
-            "219",
-            "14.376"
-        ],
-        [
-            "kill",
-            "Kaisa",
-            "Rakan",
+            "Graves",
+            "Qiyana",
             "274",
-            "14.376"
+            "12.833"
         ],
         [
             "kill",
-            "Tryndamere",
-            "Camille",
+            "Graves",
+            "Zoe",
+            "140",
+            "13.113"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Kayn",
             "300",
-            "15.060"
+            "13.275"
         ],
         [
             "kill",
-            "Sylas",
-            "Tryndamere",
+            "Qiyana",
+            "Yasuo",
             "300",
-            "15.067"
+            "13.994"
         ],
         [
             "kill",
-            "Khazix",
-            "Rakan",
-            "219",
-            "15.654"
+            "Graves",
+            "Zoe",
+            "112",
+            "14.809"
         ],
         [
             "kill",
-            "Khazix",
-            "Zed",
-            "300",
-            "15.685"
-        ],
-        [
-            "kill",
-            "Kaisa",
-            "Sylas",
-            "300",
-            "15.693"
-        ],
-        [
-            "kill",
-            "Leblanc",
-            "Vladimir",
-            "300",
-            "15.769"
-        ],
-        [
-            "kill",
-            "Sylas",
-            "Nami",
-            "300",
-            "16.949"
-        ],
-        [
-            "kill",
-            "Tryndamere",
-            "Camille",
-            "300",
-            "16.972"
-        ],
-        [
-            "kill",
-            "Nami",
-            "Zed",
-            "300",
-            "16.972"
-        ],
-        [
-            "kill",
-            "Khazix",
-            "Sylas",
-            "300",
-            "17.067"
-        ],
-        [
-            "kill",
-            "Rakan",
-            "Kaisa",
-            "300",
-            "17.104"
-        ],
-        [
-            "kill",
-            "Khazix",
-            "Rakan",
-            "300",
-            "17.661"
-        ],
-        [
-            "kill",
-            "Tryndamere",
-            "Camille",
+            "Aphelios",
+            "Lucian",
             "274",
-            "17.992"
+            "15.066"
         ],
         [
             "kill",
-            "Khazix",
-            "Zed",
-            "274",
-            "17.999"
-        ],
-        [
-            "kill",
-            "Sylas",
-            "Khazix",
-            "300",
-            "18.234"
-        ],
-        [
-            "kill",
-            "Nami",
-            "Sylas",
-            "300",
-            "18.299"
-        ],
-        [
-            "obj",
-            "riftherald",
-            "blue",
-            "18.780",
-            "null"
-        ],
-        [
-            "kill",
-            "Kaisa",
-            "Zed",
+            "Vex",
+            "Morgana",
             "219",
-            "18.829"
+            "15.118"
         ],
         [
             "kill",
-            "Kaisa",
-            "Rakan",
+            "Graves",
+            "Qiyana",
             "300",
-            "18.933"
+            "15.273"
         ],
         [
             "kill",
-            "Vladimir",
-            "Camille",
-            "219",
-            "18.981"
-        ],
-        [
-            "kill",
-            "Kaisa",
-            "Sylas",
+            "Graves",
+            "Kayn",
             "300",
-            "19.252"
+            "15.737"
+        ],
+        [
+            "kill",
+            "Zoe",
+            "Yasuo",
+            "300",
+            "16.089"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Renata",
+            "300",
+            "16.212"
         ],
         [
             "obj",
             "dragon",
             "cloud",
-            "blue",
-            "19.387"
+            "red",
+            "16.988"
         ],
         [
             "kill",
-            "Leblanc",
-            "Kaisa",
+            "Yasuo",
+            "Qiyana",
             "300",
-            "19.619"
+            "17.264"
         ],
         [
             "kill",
-            "Nami",
-            "Leblanc",
+            "Graves",
+            "Kayn",
+            "274",
+            "17.591"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Aphelios",
             "300",
-            "19.674"
+            "17.748"
         ],
         [
             "kill",
-            "Khazix",
-            "Rakan",
+            "Qiyana",
+            "Yasuo",
             "300",
-            "19.780"
+            "18.695"
         ],
         [
             "kill",
-            "Khazix",
-            "Zed",
+            "Yasuo",
+            "Qiyana",
+            "300",
+            "18.740"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Renata",
+            "300",
+            "18.984"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Graves",
+            "300",
+            "19.042"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Lucian",
+            "300",
+            "19.742"
+        ],
+        [
+            "obj",
+            "riftherald",
+            "red",
+            "19.854",
+            "null"
+        ],
+        [
+            "kill",
+            "Renata",
+            "Zoe",
+            "300",
+            "20.096"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Vex",
+            "300",
+            "20.269"
+        ],
+        [
+            "kill",
+            "Qiyana",
+            "Graves",
+            "300",
+            "20.858"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Yasuo",
+            "300",
+            "20.899"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Renata",
+            "300",
+            "21.047"
+        ],
+        [
+            "kill",
+            "Lucian",
+            "Zoe",
+            "300",
+            "21.503"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Lucian",
+            "300",
+            "21.631"
+        ],
+        [
+            "kill",
+            "Kayn",
+            "Graves",
+            "300",
+            "22.422"
+        ],
+        [
+            "obj",
+            "dragon",
+            "cloud",
+            "red",
+            "22.434"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Yasuo",
+            "300",
+            "22.567"
+        ],
+        [
+            "kill",
+            "Morgana",
+            "Kayn",
+            "300",
+            "22.691"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Morgana",
+            "300",
+            "22.717"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Renata",
+            "300",
+            "22.963"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Zoe",
+            "300",
+            "23.365"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Graves",
+            "300",
+            "23.403"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Yasuo",
+            "274",
+            "23.663"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Renata",
+            "274",
+            "24.454"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Graves",
+            "300",
+            "24.651"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Yasuo",
+            "219",
+            "24.906"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Renata",
+            "219",
+            "25.372"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Graves",
+            "274",
+            "25.695"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Morgana",
+            "300",
+            "25.705"
+        ],
+        [
+            "kill",
+            "Vex",
+            "Lucian",
+            "300",
+            "25.782"
+        ],
+        [
+            "kill",
+            "Yasuo",
+            "Vex",
+            "300",
+            "25.826"
+        ],
+        [
+            "kill",
+            "Kayn",
+            "Yasuo",
+            "300",
+            "25.855"
+        ],
+        [
+            "kill",
+            "Aphelios",
+            "Renata",
             "175",
-            "20.082"
-        ],
-        [
-            "kill",
-            "Camille",
-            "Khazix",
-            "300",
-            "20.690"
+            "26.105"
         ]
     ],
     "names": [
         [
             "bluename",
-            "ankrec",
-            "Tryndamere",
+            "Tedvazqu",
+            "Renata",
             "null",
             "null"
         ],
         [
             "bluename",
-            "ElainefYgEmF",
-            "Khazix",
+            "Chis",
+            "Graves",
             "null",
             "null"
         ],
         [
             "bluename",
-            "Xi Gua Tai lang",
-            "Vladimir",
+            "JOHNNN CENA",
+            "Yasuo",
             "null",
             "null"
         ],
         [
             "bluename",
-            "II Raging II",
-            "Kaisa",
+            "Niftyyyy",
+            "Lucian",
             "null",
             "null"
         ],
         [
             "bluename",
-            "WoZhiHuiOB ",
-            "Nami",
+            "N00000DLE",
+            "Morgana",
             "null",
             "null"
         ],
         [
             "redname",
-            "redteam:BoilThe0il",
-            "Camille",
+            "redteam:elbeaus",
+            "Qiyana",
             "null",
             "null"
         ],
         [
             "redname",
-            "Lojaz",
-            "Zed",
+            "Barneybones",
+            "Kayn",
             "null",
             "null"
         ],
         [
             "redname",
-            "Samikin",
-            "Sylas",
+            "Bit JB",
+            "Zoe",
             "null",
             "null"
         ],
         [
             "redname",
-            "soupsauce",
-            "Leblanc",
+            "wheat thins",
+            "Aphelios",
             "null",
             "null"
         ],
         [
             "redname",
-            "plez",
-            "Rakan",
+            "TheKingzSlayer",
+            "Vex",
             "null",
             "null"
         ]
