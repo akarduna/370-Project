@@ -1,634 +1,473 @@
 {
     "player": [
         "focus",
-        "wheat thins",
-        "Aphelios",
+        "Klib",
+        "Tristana",
         "null",
         "null"
     ],
     "events": [
         [
             "kill",
-            "Qiyana",
-            "Graves",
+            "Kennen",
+            "Pantheon",
             "400",
-            "3.930"
+            "2.549"
         ],
         [
             "kill",
-            "Renata",
-            "Qiyana",
+            "Kennen",
+            "Kennen",
             "300",
-            "4.061"
+            "2.648"
         ],
         [
             "kill",
-            "Lucian",
-            "Vex",
+            "Ashe",
+            "Sona",
             "300",
-            "4.129"
+            "3.761"
         ],
         [
             "kill",
-            "Vex",
-            "Morgana",
+            "Ashe",
+            "Tristana",
             "300",
-            "4.136"
+            "3.890"
         ],
         [
             "kill",
-            "Kayn",
-            "Renata",
+            "Mordekaiser",
+            "Aatrox",
             "300",
-            "4.162"
+            "4.434"
         ],
         [
             "kill",
-            "Kayn",
-            "Yasuo",
+            "Kennen",
+            "Kennen",
             "300",
-            "4.547"
+            "5.681"
         ],
         [
             "kill",
-            "Graves",
-            "Kayn",
+            "Tristana",
+            "Ashe",
             "300",
-            "4.746"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Graves",
-            "300",
-            "5.298"
-        ],
-        [
-            "kill",
-            "Yasuo",
-            "Zoe",
-            "300",
-            "5.422"
-        ],
-        [
-            "kill",
-            "Yasuo",
-            "Kayn",
-            "300",
-            "5.687"
-        ],
-        [
-            "kill",
-            "Yasuo",
-            "Vex",
-            "300",
-            "5.771"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Morgana",
-            "300",
-            "7.098"
-        ],
-        [
-            "kill",
-            "Lucian",
-            "Vex",
-            "300",
-            "7.104"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Lucian",
-            "300",
-            "7.167"
-        ],
-        [
-            "kill",
-            "Qiyana",
-            "Renata",
-            "300",
-            "7.419"
-        ],
-        [
-            "kill",
-            "Graves",
-            "Kayn",
-            "300",
-            "7.641"
-        ],
-        [
-            "kill",
-            "Graves",
-            "Vex",
-            "300",
-            "8.178"
-        ],
-        [
-            "kill",
-            "Lucian",
-            "Kayn",
-            "274",
-            "8.648"
-        ],
-        [
-            "kill",
-            "Yasuo",
-            "Zoe",
-            "274",
-            "9.506"
-        ],
-        [
-            "kill",
-            "Qiyana",
-            "Renata",
-            "274",
-            "9.600"
-        ],
-        [
-            "kill",
-            "Graves",
-            "Qiyana",
-            "300",
-            "9.691"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Morgana",
-            "300",
-            "10.111"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Lucian",
-            "300",
-            "10.472"
-        ],
-        [
-            "obj",
-            "riftherald",
-            "red",
-            "10.571",
-            "null"
-        ],
-        [
-            "kill",
-            "Yasuo",
-            "Zoe",
-            "219",
-            "10.814"
-        ],
-        [
-            "kill",
-            "Graves",
-            "Aphelios",
-            "300",
-            "10.899"
-        ],
-        [
-            "kill",
-            "Renata",
-            "Qiyana",
-            "300",
-            "11.234"
-        ],
-        [
-            "kill",
-            "Kayn",
-            "Yasuo",
-            "300",
-            "11.297"
+            "6.306"
         ],
         [
             "obj",
             "dragon",
-            "ocean",
+            "hextech",
             "blue",
-            "11.648"
+            "6.850"
         ],
         [
             "kill",
-            "Graves",
-            "Zoe",
-            "175",
-            "11.954"
+            "Kennen",
+            "Pantheon",
+            "300",
+            "7.416"
         ],
         [
             "kill",
-            "Vex",
-            "Morgana",
+            "Mordekaiser",
+            "Aatrox",
             "274",
-            "12.514"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Lucian",
-            "300",
-            "12.568"
+            "7.650"
         ],
         [
             "kill",
             "Graves",
-            "Qiyana",
+            "Kennen",
+            "300",
+            "7.781"
+        ],
+        [
+            "kill",
+            "Tristana",
+            "Soraka",
+            "300",
+            "9.853"
+        ],
+        [
+            "kill",
+            "Tristana",
+            "Ashe",
+            "300",
+            "9.966"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Kennen",
+            "300",
+            "10.218"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Sona",
+            "300",
+            "10.458"
+        ],
+        [
+            "kill",
+            "Pantheon",
+            "Graves",
+            "300",
+            "10.470"
+        ],
+        [
+            "kill",
+            "Kennen",
+            "Pantheon",
+            "300",
+            "11.333"
+        ],
+        [
+            "kill",
+            "Tristana",
+            "Ashe",
             "274",
-            "12.833"
-        ],
-        [
-            "kill",
-            "Graves",
-            "Zoe",
-            "140",
-            "13.113"
-        ],
-        [
-            "kill",
-            "Graves",
-            "Kayn",
-            "300",
-            "13.275"
-        ],
-        [
-            "kill",
-            "Qiyana",
-            "Yasuo",
-            "300",
-            "13.994"
-        ],
-        [
-            "kill",
-            "Graves",
-            "Zoe",
-            "112",
-            "14.809"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Lucian",
-            "274",
-            "15.066"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Morgana",
-            "219",
-            "15.118"
-        ],
-        [
-            "kill",
-            "Graves",
-            "Qiyana",
-            "300",
-            "15.273"
-        ],
-        [
-            "kill",
-            "Graves",
-            "Kayn",
-            "300",
-            "15.737"
-        ],
-        [
-            "kill",
-            "Zoe",
-            "Yasuo",
-            "300",
-            "16.089"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Renata",
-            "300",
-            "16.212"
+            "11.433"
         ],
         [
             "obj",
             "dragon",
             "cloud",
-            "red",
-            "16.988"
+            "blue",
+            "12.016"
         ],
         [
             "kill",
-            "Yasuo",
-            "Qiyana",
+            "Kennen",
+            "Pantheon",
             "300",
-            "17.264"
+            "12.307"
         ],
         [
             "kill",
+            "Aatrox",
+            "Sona",
+            "300",
+            "12.315"
+        ],
+        [
+            "kill",
+            "Tristana",
             "Graves",
-            "Kayn",
+            "300",
+            "12.394"
+        ],
+        [
+            "kill",
+            "Pantheon",
+            "Ashe",
             "274",
-            "17.591"
+            "13.246"
         ],
         [
             "kill",
-            "Graves",
-            "Aphelios",
+            "Kennen",
+            "Kennen",
             "300",
-            "17.748"
+            "13.561"
         ],
         [
             "kill",
-            "Qiyana",
-            "Yasuo",
+            "Mordekaiser",
+            "Aatrox",
             "300",
-            "18.695"
+            "14.244"
         ],
         [
             "kill",
-            "Yasuo",
-            "Qiyana",
+            "Pantheon",
+            "Kennen",
             "300",
-            "18.740"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Renata",
-            "300",
-            "18.984"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Graves",
-            "300",
-            "19.042"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Lucian",
-            "300",
-            "19.742"
+            "15.138"
         ],
         [
             "obj",
             "riftherald",
-            "red",
-            "19.854",
+            "blue",
+            "15.290",
             "null"
         ],
         [
             "kill",
-            "Renata",
-            "Zoe",
+            "Graves",
+            "Kennen",
+            "274",
+            "16.442"
+        ],
+        [
+            "kill",
+            "Kennen",
+            "Sona",
             "300",
-            "20.096"
+            "17.023"
+        ],
+        [
+            "kill",
+            "Mordekaiser",
+            "Aatrox",
+            "300",
+            "17.079"
         ],
         [
             "kill",
             "Graves",
-            "Vex",
+            "Tristana",
             "300",
-            "20.269"
+            "17.147"
         ],
         [
             "kill",
-            "Qiyana",
-            "Graves",
+            "Ashe",
+            "Pantheon",
             "300",
-            "20.858"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Yasuo",
-            "300",
-            "20.899"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Renata",
-            "300",
-            "21.047"
-        ],
-        [
-            "kill",
-            "Lucian",
-            "Zoe",
-            "300",
-            "21.503"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Lucian",
-            "300",
-            "21.631"
-        ],
-        [
-            "kill",
-            "Kayn",
-            "Graves",
-            "300",
-            "22.422"
+            "17.201"
         ],
         [
             "obj",
             "dragon",
-            "cloud",
+            "infernal",
             "red",
-            "22.434"
+            "17.514"
         ],
         [
             "kill",
-            "Aphelios",
-            "Yasuo",
+            "Aatrox",
+            "Pantheon",
             "300",
-            "22.567"
-        ],
-        [
-            "kill",
-            "Morgana",
-            "Kayn",
-            "300",
-            "22.691"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Morgana",
-            "300",
-            "22.717"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Renata",
-            "300",
-            "22.963"
+            "19.301"
         ],
         [
             "kill",
             "Graves",
-            "Zoe",
-            "300",
-            "23.365"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Graves",
-            "300",
-            "23.403"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Yasuo",
+            "Sona",
             "274",
-            "23.663"
+            "19.424"
         ],
         [
             "kill",
-            "Vex",
-            "Renata",
+            "Ashe",
+            "Kennen",
             "274",
-            "24.454"
+            "19.778"
         ],
         [
             "kill",
-            "Vex",
-            "Graves",
+            "Pantheon",
+            "Aatrox",
             "300",
-            "24.651"
+            "20.243"
         ],
         [
             "kill",
-            "Aphelios",
-            "Yasuo",
+            "Kennen",
+            "Mordekaiser",
+            "300",
+            "20.790"
+        ],
+        [
+            "kill",
+            "Kennen",
+            "Pantheon",
+            "300",
+            "20.969"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Sona",
             "219",
-            "24.906"
+            "22.018"
         ],
         [
             "kill",
-            "Aphelios",
-            "Renata",
+            "Kennen",
+            "Kennen",
             "219",
-            "25.372"
+            "22.447"
         ],
         [
             "kill",
-            "Aphelios",
+            "Kennen",
+            "Mordekaiser",
+            "300",
+            "22.550"
+        ],
+        [
+            "obj",
+            "dragon",
+            "infernal",
+            "red",
+            "22.701"
+        ],
+        [
+            "kill",
+            "Kennen",
+            "Tristana",
+            "300",
+            "23.158"
+        ],
+        [
+            "kill",
             "Graves",
-            "274",
-            "25.695"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Morgana",
-            "300",
-            "25.705"
-        ],
-        [
-            "kill",
-            "Vex",
-            "Lucian",
-            "300",
-            "25.782"
-        ],
-        [
-            "kill",
-            "Yasuo",
-            "Vex",
-            "300",
-            "25.826"
-        ],
-        [
-            "kill",
-            "Kayn",
-            "Yasuo",
-            "300",
-            "25.855"
-        ],
-        [
-            "kill",
-            "Aphelios",
-            "Renata",
+            "Kennen",
             "175",
-            "26.105"
+            "23.657"
+        ],
+        [
+            "obj",
+            "baron",
+            "red",
+            "24.423",
+            "null"
+        ],
+        [
+            "kill",
+            "Kennen",
+            "Kennen",
+            "140",
+            "24.640"
+        ],
+        [
+            "kill",
+            "Aatrox",
+            "Sona",
+            "175",
+            "25.242"
+        ],
+        [
+            "kill",
+            "Ashe",
+            "Pantheon",
+            "300",
+            "25.305"
+        ],
+        [
+            "kill",
+            "Ashe",
+            "Tristana",
+            "274",
+            "25.427"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Mordekaiser",
+            "274",
+            "25.454"
+        ],
+        [
+            "kill",
+            "Kennen",
+            "Aatrox",
+            "300",
+            "25.528"
+        ],
+        [
+            "kill",
+            "Ashe",
+            "Kennen",
+            "300",
+            "25.865"
+        ],
+        [
+            "kill",
+            "Kennen",
+            "Sona",
+            "140",
+            "26.603"
+        ],
+        [
+            "kill",
+            "Kennen",
+            "Tristana",
+            "274",
+            "26.615"
+        ],
+        [
+            "kill",
+            "Graves",
+            "Kennen",
+            "300",
+            "27.043"
         ]
     ],
     "names": [
         [
             "bluename",
-            "Tedvazqu",
-            "Renata",
+            "Bobbyzilla Teemo",
+            "Mordekaiser",
             "null",
             "null"
         ],
         [
             "bluename",
-            "Chis",
+            "Phillip15",
+            "Kennen",
+            "null",
+            "null"
+        ],
+        [
+            "bluename",
+            "Skt Tl Zed",
+            "Pantheon",
+            "null",
+            "null"
+        ],
+        [
+            "bluename",
+            "Klib",
+            "Tristana",
+            "null",
+            "null"
+        ],
+        [
+            "bluename",
+            "qayjb",
+            "Sona",
+            "null",
+            "null"
+        ],
+        [
+            "redname",
+            "redteam:abzoo",
+            "Aatrox",
+            "null",
+            "null"
+        ],
+        [
+            "redname",
+            "Te amo Arantxa",
             "Graves",
             "null",
             "null"
         ],
         [
-            "bluename",
-            "JOHNNN CENA",
-            "Yasuo",
-            "null",
-            "null"
-        ],
-        [
-            "bluename",
-            "Niftyyyy",
-            "Lucian",
-            "null",
-            "null"
-        ],
-        [
-            "bluename",
-            "N00000DLE",
-            "Morgana",
+            "redname",
+            "Nominate",
+            "Kennen",
             "null",
             "null"
         ],
         [
             "redname",
-            "redteam:elbeaus",
-            "Qiyana",
+            "im yoshishi",
+            "Ashe",
             "null",
             "null"
         ],
         [
             "redname",
-            "Barneybones",
-            "Kayn",
-            "null",
-            "null"
-        ],
-        [
-            "redname",
-            "Bit JB",
-            "Zoe",
-            "null",
-            "null"
-        ],
-        [
-            "redname",
-            "wheat thins",
-            "Aphelios",
-            "null",
-            "null"
-        ],
-        [
-            "redname",
-            "TheKingzSlayer",
-            "Vex",
+            "Hamilet",
+            "Soraka",
             "null",
             "null"
         ]
