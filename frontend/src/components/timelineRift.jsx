@@ -5,9 +5,9 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import { Avatar, Typography } from "@mui/material";
-import TakendownIcon from "../images/takendownIcon.png";
+import riftIcon from "../images/riftIcon.png";
 
-export default function TimelineTakendown({ heartrate, enemy, time }) {
+export default function TimelineRift({ heartrate, time }) {
 	return (
 		<TimelineItem>
 			<TimelineOppositeContent
@@ -16,21 +16,20 @@ export default function TimelineTakendown({ heartrate, enemy, time }) {
 				variant="body2"
 				color="text.secondary"
 			>
-				<Typography>{heartrate} bpm</Typography>
-				<Typography>{time}</Typography>
+				<Typography variant="body1">{heartrate} bpm</Typography>
+				<Typography variant="body2">{time}</Typography>
 			</TimelineOppositeContent>
 			<TimelineSeparator>
 				<TimelineConnector />
 				<TimelineDot>
-					<Avatar alt="Takendown" src={TakendownIcon} />
+					<Avatar alt="Rift" src={riftIcon} />
 				</TimelineDot>
 				<TimelineConnector />
 			</TimelineSeparator>
 			<TimelineContent sx={{ py: "30px", px: 4 }}>
 				<Typography variant="h6" component="span">
-					Takendown
+					Rift Herald
 				</Typography>
-				<Typography>By {enemy}</Typography>
 			</TimelineContent>
 		</TimelineItem>
 	);
