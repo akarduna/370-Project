@@ -117,8 +117,7 @@ for i in range(len(summonerName)):
     else:  
         file.write("redname,")
     print(summonerName[i] + " is playing " + champNames[i])
-    if(i == 5):
-        file.write("redteam:")
+    
     file.write(summonerName[i] + "," + champNames[i] + ",null,null\n")
 playerIndex = summonerName.index(summonerNameResponse["name"])
 file.write("focus," + summonerNameResponse["name"] + "," + champNames[playerIndex] + ",null,null\n")
