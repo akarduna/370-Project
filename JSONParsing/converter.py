@@ -1,11 +1,12 @@
 import csv
 import json
-from unicodedata import name
+import locale
+from locale import atof
  
  
 # Function to convert a CSV to JSON
 # Takes the file paths as arguments
-def make_json(csvFilePath, jsonFilePath):
+def make_json(csvFilePath, jsonFilePath, heartRatePath):
      
     # create a dictionary
     data = {}
@@ -14,6 +15,8 @@ def make_json(csvFilePath, jsonFilePath):
     # Open a csv reader called DictReader
     with open(csvFilePath, encoding='utf-8') as csvf:
         csvReader = csv.DictReader(csvf)
+        with open(heartRatePath, encoding='utf-8') as heartrate:
+            hr = list(csv.reader(heartrate))
         
         # Convert each row into a dictionary
         # and add it to data
@@ -23,7 +26,12 @@ def make_json(csvFilePath, jsonFilePath):
             elif rows['event'] == 'focus':
                 data['player'] = list(rows.values())
             elif rows['event'] != 'timestamp':
-                events.append(list(rows.values()))
+                row = list(rows.values())
+                if row[4] != "null":
+                    time_float = atof(row[4])*60
+                    print(time_float, row[4])
+                    row.append(hr[int(time_float)][0])
+                events.append(row)
     data['events'] = events
     data['names'] = names
     with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:
@@ -36,6 +44,8 @@ def make_json(csvFilePath, jsonFilePath):
 def run():
     csvFilePath = r'gamedata.csv'
     jsonFilePath = r'gamedata.json'
-    
+    heartRatePath = r'Heartrate.csv'
     # Call the make_json function
-    make_json(csvFilePath, jsonFilePath)
+    make_json(csvFilePath, jsonFilePath, heartRatePath)
+
+run()
